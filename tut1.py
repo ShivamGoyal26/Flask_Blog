@@ -10,4 +10,8 @@ def about():
     var = "shivam"
     return render_template('about.html', name=var)
 
+@app.route("/bootstrap")
+def bootsrap():
+    return render_template('bootstrap.html')
+
 app.run(debug=True)
