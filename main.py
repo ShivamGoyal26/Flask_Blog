@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Request
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -14,7 +14,7 @@ class Contacts(db.Model):
     email = db.Column(db.String(20), nullable=False)
     phone_num = db.Column(db.String(12), nullable=False)
     mes = db.Column(db.String(80), nullable=False)
-    date = db.Column(db.String(12), nullable=False)
+    # date = db.Column(db.String(12), nullable=True)
 
 @app.route("/")
 def home():
@@ -30,7 +30,7 @@ def contact():
          phone = request.form.get('phone')
          message = request.form.get('message')  
         #  here we fetch the data from the database now lets add the data in the database 
-         entry = Contacts(name=name, phone_num=phone, msg=message, email=email)
+         entry = Contacts(name=name, phone_num=phone, mes=message, email=email)
          db.session.add(entry)
          db.session.commit()
 
