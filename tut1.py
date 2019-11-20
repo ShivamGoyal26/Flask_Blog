@@ -10,6 +10,16 @@ def about():
     var = "shivam"
     return render_template('about.html', name=var)
 
+@app.route("/contact")
+def contact():
+    var = "shivam"
+    return render_template('contact.html', name=var)
+
+@app.route("/post")
+def post():
+    var = "shivam"
+    return render_template('post.html', name=var)
+
 @app.route("/bootstrap")
 def bootsrap():
     return render_template('bootstrap.html')
