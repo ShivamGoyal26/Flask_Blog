@@ -1,0 +1,13 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/flaskblog",
+        "prod_uri": "mysql://root:@localhost/flaskblog",
+        "tw_url": "https://twitter.com/",
+        "fb_url": "https://www.facebook.com/",
+        "gh_url": "https://github.com/",
+        "blog_name": "Flask Blog",
+        "gmail-user": "theoriginators.info@gmail.com",
+        "gmail-password": "heyoriginators235%$r"
+    }
+}
